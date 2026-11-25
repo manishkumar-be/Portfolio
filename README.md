@@ -5,6 +5,7 @@ Personal portfolio website: about, resume, projects and contact, in a single sta
 **Live site:** https://manishkumar-be.github.io/Portfolio/
 
 ## Sections
+- **Photo**: replace `assets/images/profile.jpg` with your own photo (square, keep the same file name)
 - **About**: summary, highlights, what I do, leadership
 - **Resume**: experience (Deloitte US-India, TIET research), education, skills, certifications
 - **Projects**: AquaNexus, Thapar Leave Management System, Full-Stack Job Portal, Wheat Growth-Stage Classification, 2D Space Shooter (filterable, with detail pop-ups)

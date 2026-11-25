@@ -207,3 +207,24 @@ form.addEventListener('submit', e => {
 });
 
 document.querySelector('[data-year]').textContent = new Date().getFullYear();
+
+/* ---------- Resume viewer ---------- */
+const resumeModal = document.querySelector('[data-resume]');
+const resumeFrame = document.querySelector('[data-resume-frame]');
+const RESUME_URL = 'assets/Manish_Kumar_Resume.pdf';
+document.querySelector('[data-resume-open]').addEventListener('click', () => {
+  // Phones can't show a PDF inside a page, so open it directly there.
+  if (window.matchMedia('(max-width: 767px)').matches) {
+    window.open(RESUME_URL, '_blank', 'noopener');
+    return;
+  }
+  if (!resumeFrame.src) resumeFrame.src = RESUME_URL + '#view=FitH';
+  resumeModal.hidden = false;
+  document.body.classList.add('no-scroll');
+});
+function closeResume() {
+  resumeModal.hidden = true;
+  document.body.classList.remove('no-scroll');
+}
+resumeModal.addEventListener('click', e => { if (e.target.closest('[data-resume-close]')) closeResume(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && !resumeModal.hidden) closeResume(); });
