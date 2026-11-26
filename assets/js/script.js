@@ -194,18 +194,6 @@ sidebarBtn.addEventListener('click', () => {
   sidebarBtn.querySelector('span').textContent = open ? 'Hide contacts' : 'Show contacts';
 });
 
-/* ---------- Contact form (mailto) ---------- */
-const form = document.querySelector('[data-form]');
-const formBtn = document.querySelector('[data-form-btn]');
-form.addEventListener('input', () => { formBtn.disabled = !form.checkValidity(); });
-form.addEventListener('submit', e => {
-  e.preventDefault();
-  const d = new FormData(form);
-  const subject = d.get('subject') || `Portfolio enquiry from ${d.get('name')}`;
-  const body = `${d.get('message')}\n\n— ${d.get('name')} (${d.get('email')})`;
-  window.location.href = `mailto:manishkumarsiwach5@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-});
-
 document.querySelector('[data-year]').textContent = new Date().getFullYear();
 
 /* ---------- Resume viewer ---------- */
