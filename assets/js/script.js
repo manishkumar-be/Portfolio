@@ -16,6 +16,7 @@ const projects = [
     points: [
       'ESP32 firmware in C/C++ reads six sensors (pH, TDS, turbidity, water temperature, air temperature/humidity, water level) and pushes readings to a ThingSpeak cloud dashboard.',
       'Automated pump and circulation control through a motor driver, with a 16×2 I2C LCD cycling through live readings.',
+      'Trained and evaluated the models on a dataset of 124,000 plant images.',
       'Benchmarked four architectures for growth-stage classification: DenseNet121 (98.73%), EfficientNet (~92.7%), custom CNN (~92.5%) and LNN (~80.8%).',
       'End-to-end pipeline (sensor → cloud → inference → dashboard) ran continuously during testing without manual intervention.'
     ],
