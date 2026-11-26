@@ -414,3 +414,11 @@ textarea.input { resize: vertical; min-height: 120px; }
   .nav-link { font-size: 14.5px; padding: 20px 13px; }
   .page { padding-top: 64px; }
 }
+
+/* Headline under name */
+.role {
+  background: none; border: 0; padding: 0; border-radius: 0;
+  font-size: 13.5px; font-weight: 500; letter-spacing: .02em; line-height: 1.5;
+  color: var(--accent-2);
+}
+.role span { display: block; white-space: nowrap; }
