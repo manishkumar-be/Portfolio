@@ -20,7 +20,7 @@ const projects = [
       'Benchmarked four architectures for growth-stage classification: DenseNet121 (98.73%), EfficientNet (~92.7%), custom CNN (~92.5%) and LNN (~80.8%).',
       'End-to-end pipeline (sensor → cloud → inference → dashboard) ran continuously during testing without manual intervention.'
     ],
-    links: [{ label: 'View on GitHub', href: 'https://github.com/manishkumarsiwach/AquaNexus---Plant-growth-monitoring-in-Automated-Aquaponic-System' }]
+    links: [{ label: 'View on GitHub', href: 'https://github.com/manishkumar-be/AquaNexus---Plant-growth-monitoring-in-Automated-Aquaponic-System' }]
   },
   {
     id: 'tlms',
@@ -58,7 +58,7 @@ const projects = [
       'Resume and certificate uploads through Multer with file type and size validation.',
       'Selenium WebDriver + TestNG regression suite across login, posting, applying and status updates, increasing test coverage by 30%.'
     ],
-    links: [{ label: 'View on GitHub', href: 'https://github.com/manishkumarsiwach/Job-Project' }]
+    links: [{ label: 'View on GitHub', href: 'https://github.com/manishkumar-be/Job-Project' }]
   },
   {
     id: 'wheat',
@@ -95,7 +95,7 @@ const projects = [
       'A 15-HP boss with multiple phases, radial shots, beam attacks and a health bar.',
       'Custom explosion animations, score and lives system, and PNG textures loaded with stb_image.'
     ],
-    links: [{ label: 'View on GitHub', href: 'https://github.com/manishkumarsiwach/Space-Shooter-Game-2D' }]
+    links: [{ label: 'View on GitHub', href: 'https://github.com/manishkumar-be/Space-Shooter-Game-2D' }]
   }
 ];
 
