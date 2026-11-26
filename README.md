@@ -6,8 +6,10 @@ Personal portfolio website: about, resume, projects and contact, in a single sta
 
 ## Sections
 - **Photo**: replace `assets/images/profile.jpg` with your own photo (square, keep the same file name)
-- **About**: summary, highlights, what I do, leadership
-- **Resume**: experience (Deloitte US-India, TIET research), education, skills, certifications
+- **About**: introduction, highlights and what I do
+- **Resume**: education, certifications and an inline resume preview with download
+- **Skills**: technical and business/professional skills
+- **Experience**: Deloitte US-India, TIET research internship, E-Cell leadership
 - **Projects**: AquaNexus, Thapar Leave Management System, Full-Stack Job Portal, Wheat Growth-Stage Classification, 2D Space Shooter (filterable, with detail pop-ups)
 - **Contact**: email, LinkedIn, GitHub and a message form that opens your mail app
 

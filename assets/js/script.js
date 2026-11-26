@@ -212,7 +212,7 @@ document.querySelector('[data-year]').textContent = new Date().getFullYear();
 const resumeModal = document.querySelector('[data-resume]');
 const resumeFrame = document.querySelector('[data-resume-frame]');
 const RESUME_URL = 'assets/Manish_Kumar_Resume.pdf';
-document.querySelector('[data-resume-open]').addEventListener('click', () => {
+document.querySelectorAll('[data-resume-open]').forEach(btn => btn.addEventListener('click', () => {
   // Phones can't show a PDF inside a page, so open it directly there.
   if (window.matchMedia('(max-width: 767px)').matches) {
     window.open(RESUME_URL, '_blank', 'noopener');
@@ -221,7 +221,18 @@ document.querySelector('[data-resume-open]').addEventListener('click', () => {
   if (!resumeFrame.src) resumeFrame.src = RESUME_URL + '#view=FitH';
   resumeModal.hidden = false;
   document.body.classList.add('no-scroll');
-});
+}));
+
+/* Inline preview on the Resume page (desktop only; loaded when the page is first opened) */
+const resumeInline = document.querySelector('[data-resume-inline]');
+function loadInlineResume() {
+  if (!resumeInline.src && !window.matchMedia('(max-width: 767px)').matches) {
+    resumeInline.src = RESUME_URL + '#view=FitH';
+  }
+}
+if (document.querySelector('[data-page="resume"]').classList.contains('active')) loadInlineResume();
+navLinks.forEach(l => l.addEventListener('click', () => { if (l.dataset.nav === 'resume') loadInlineResume(); }));
+window.addEventListener('hashchange', () => { if (location.hash === '#resume') loadInlineResume(); });
 function closeResume() {
   resumeModal.hidden = true;
   document.body.classList.remove('no-scroll');

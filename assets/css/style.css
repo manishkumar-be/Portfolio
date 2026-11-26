@@ -391,3 +391,26 @@ textarea.input { resize: vertical; min-height: 120px; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
 .btn-icon svg { width: 20px; height: 20px; flex: none; }
+
+/* ---------- v3: six pages, resume preview ---------- */
+.service-item .chips { margin-top: 12px; }
+.service-item > div { min-width: 0; }
+.skills + .skills { margin-top: 34px; }
+.resume-preview-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+.resume-preview-head .h3 { margin: 0; }
+.resume-inline {
+  display: block; width: 100%; height: 820px; border: 1px solid var(--line);
+  border-radius: 14px; background: #525659;
+}
+@media (max-width: 767px) {
+  .resume-inline { display: none; }
+  .navbar ul { justify-content: flex-start; overflow-x: auto; scrollbar-width: none; gap: 0; padding: 0 4px; }
+  .navbar ul::-webkit-scrollbar { display: none; }
+  .navbar li { flex: none; }
+  .nav-link { font-size: 13px; padding: 16px 7px; }
+}
+@media (min-width: 1024px) {
+  .navbar ul { padding: 0 14px; gap: 2px; }
+  .nav-link { font-size: 14.5px; padding: 20px 13px; }
+  .page { padding-top: 64px; }
+}
